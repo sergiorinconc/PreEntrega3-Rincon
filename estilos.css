@@ -1,0 +1,61 @@
+/* estilos.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(112, 112, 230);
+}
+
+#contenedor-quiz, #contenedor-formulario, #contenedor-resultados {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#formulario-inicial {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#formulario-inicial div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#formulario-inicial label {
+    margin-bottom: 5px;
+}
+
+#formulario-inicial input {
+    padding: 5px;
+    width: 100%;
+}
+
+#respuestas {
+    margin-top: 20px;
+}
+
+.boton-respuesta {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.boton-respuesta.correcto {
+    background-color: #4caf50;
+    color: white;
+}
+
+.boton-respuesta.incorrecto {
+    background-color: #f44336;
+    color: white;
+}
+
+#boton-siguiente, #boton-resultados, #boton-reiniciar {
+    margin-top: 20px;
+    padding: 10px 20px;
+}
